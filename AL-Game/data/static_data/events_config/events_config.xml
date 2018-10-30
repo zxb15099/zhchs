@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="events_config.xsd">
+    <active>The Moon Festival</active>
+    <events>
+        <event name="The Moon Festival" start="2018-10-01T00:00:00+00:00" end="2018-10-24T00:00:00+00:00">
+            <event_drops>
+                <event_drop item_id="164002387" count="1" chance="2" minDiff="75" maxDiff="85"/> <!-- [Jakunerk] Moon Palace Rabbit Insignia -->
+            </event_drops>
+            <spawns>
+                <!-- Sanctum -->
+                <spawn_map map_id="110010000">
+					<!-- Juin ||| world_event_midautumn_npc01_l -->
+					<spawn npc_id="834957" respawn_time="295">
+						<spot x="1531.0" y="1516.2" z="565.894" h="30"/>
+					</spawn>
+					<!-- Ring ||| world_event_midautumn_npc02_l -->
+					<spawn npc_id="834959" respawn_time="295">
+						<spot x="1533.01" y="1514.9" z="565.89056" h="23"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_mortar -->
+					<spawn npc_id="834963" respawn_time="295">
+						<spot x="1528.74" y="1506.65" z="565.8971" h="23"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_background -->
+					<spawn npc_id="834964" respawn_time="295">
+						<spot x="1532.6" y="1511.5" z="565.88257" h="60"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_table -->
+					<spawn npc_id="834965" respawn_time="295">
+						<spot x="1531.81" y="1515.91" z="565.8928" h="30"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_moon -->
+					<spawn npc_id="834966" respawn_time="295">
+						<spot x="1534.81" y="1514.91" z="565.89197" h="30"/>
+					</spawn>
+                </spawn_map>
+				<!-- Pandaemonium -->
+                <spawn_map map_id="120010000">
+					<!-- Juin ||| world_event_midautumn_npc01_d -->
+					<spawn npc_id="834958" respawn_time="295">
+						<spot x="1185.5" y="1402.79" z="208.125" h="30"/>
+					</spawn>
+					<!-- Ring ||| world_event_midautumn_npc02_d -->
+					<spawn npc_id="834960" respawn_time="295">
+						<spot x="1187.8" y="1401.4" z="208.125" h="23"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_mortar -->
+					<spawn npc_id="834963" respawn_time="295">
+						<spot x="1182.92" y="1394.38" z="208.125" h="30"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_background -->
+					<spawn npc_id="834964" respawn_time="295">
+						<spot x="1187.59" y="1396.98" z="208.125" h="60"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_table -->
+					<spawn npc_id="834965" respawn_time="295">
+						<spot x="1186.51" y="1402.35" z="208.125" h="30"/>
+					</spawn>
+					<!-- None ||| world_event_midautumn_moon -->
+					<spawn npc_id="834966" respawn_time="295">
+						<spot x="1189.51" y="1401.35" z="208.125" h="30"/>
+					</spawn>
+                </spawn_map>
+				<!-- Lakrum -->
+                <spawn_map map_id="600200000">
+					<!-- Chen ||| world_event_midautumn_npc03_l -->
+					<spawn npc_id="834961" respawn_time="295">
+						<spot x="2668.16" y="495.95" z="323.40546" h="80"/>
+					</spawn>
+					<!-- Chen ||| world_event_midautumn_npc03_d -->
+					<spawn npc_id="834962" respawn_time="295">
+						<spot x="2899.1" y="2475.37" z="313.82904" h="19"/>
+					</spawn>
+                </spawn_map>
+            </spawns>
+        </event>  
+    </events>
+</events_config>
