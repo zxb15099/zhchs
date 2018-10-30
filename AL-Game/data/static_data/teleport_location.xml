@@ -396,34 +396,30 @@
     <teleloc_template loc_id="540" mapid="210100000" name="109th Garrison - The Hand of Bitter Battle" name_id="405274" posX="2320.291" posY="689.236" posZ="237.92978" heading="0"/>
     <teleloc_template loc_id="541" mapid="210100000" name="110th Garrison - Battlefield Encouragement" name_id="405275" posX="312.98578" posY="562.925" posZ="278.0387" heading="10"/>
     <teleloc_template loc_id="542" mapid="210100000" name="111th Garrison - The Hand of Bitter Battle" name_id="405276" posX="857.2923" posY="2457.7627" posZ="356.375" heading="20"/>
-    <teleloc_template loc_id="549" mapid="600200000" name="Everlasting Life Refuge" name_id="405390" posX="2690.8777" posY="485.8917" posZ="323.3768" heading="0"/>
-    <teleloc_template loc_id="550" mapid="600200000" name="Heavenly Lights Garrison" name_id="405391" posX="391.6945" posY="357.8394" posZ="369.125" heading="0"/>
-    <teleloc_template loc_id="551" mapid="600200000" name="Guardians Outpost" name_id="405392" posX="564.34454" posY="1393.0892" posZ="321.25" heading="0"/>
+    <teleloc_template loc_id="549" mapid="600200000" name="Everlasting Life Refuge" name_id="405390" posX="2687.8777" posY="487.8917" posZ="323.3768" heading="0"/>
+    <teleloc_template loc_id="550" mapid="600200000" name="Heavenly Lights Garrison" name_id="405391" posX="389.6945" posY="359.8394" posZ="369.125" heading="0"/>
+    <teleloc_template loc_id="551" mapid="600200000" name="Guardians Outpost" name_id="405392" posX="567.34454" posY="1389.0892" posZ="321.25" heading="0"/>
     <teleloc_template loc_id="552" mapid="600200000" name="Temple of Perpetual Wisdom" name_id="405393" posX="2927.6543" posY="2505.6543" posZ="313.80035" heading="0"/>
     <teleloc_template loc_id="553" mapid="600200000" name="Shadowbringers Garrison" name_id="405394" posX="419.483" posY="2564.9766" posZ="284.75" heading="0"/>
     <teleloc_template loc_id="554" mapid="600200000" name="Archon Outpost" name_id="405395" posX="608.56" posY="1671.9705" posZ="324.125" heading="0"/>
-    <!-- CHECK
-    <teleloc_template loc_id="555" mapid="600200000" name="Lakrum Fortress" name_id="405396" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="556" mapid="600200000" name="Lakrum Fortress" name_id="405397" posX="0" posY="0" posZ="0" heading="0"/>
-    -->
-    <teleloc_template loc_id="557" mapid="600200000" name="Lookout Post of the Dragonfly Forest" name_id="405398" posX="1912.753" posY="735.5536" posZ="218.25" heading="60"/>
-    <teleloc_template loc_id="558" mapid="600200000" name="Manushika Lookout Post" name_id="405399" posX="1449.9846" posY="908.19965" posZ="261.125" heading="0"/>
+    <teleloc_template loc_id="555" mapid="600200000" name="Lakrum Fortress" name_id="405396" posX="184.24333" posY="1533.2328" posZ="326" heading="114"/>
+    <teleloc_template loc_id="556" mapid="600200000" name="Lakrum Fortress" name_id="405397" posX="184.24333" posY="1533.2328" posZ="326" heading="114"/>
+    <teleloc_template loc_id="557" mapid="600200000" name="Lookout Post of the Dragonfly Forest" name_id="405398" posX="1913.753" posY="731.5536" posZ="218.25" heading="60"/>
+    <teleloc_template loc_id="558" mapid="600200000" name="Manushika Lookout Post" name_id="405399" posX="1449.9846" posY="912.19965" posZ="261.125" heading="31"/>
     <teleloc_template loc_id="559" mapid="600200000" name="Lookout Post of the Mysterious Mushroom Colony" name_id="405400" posX="1740.2286" posY="2346.1687" posZ="254.0" heading="0"/>
     <teleloc_template loc_id="560" mapid="600200000" name="Hinusha Lookout Post" name_id="405401" posX="1414.5781" posY="2211.7542" posZ="224.625" heading="0"/>
-    <!-- CHECK
-    <teleloc_template loc_id="579" mapid="600200000" name="Jungle of Silence" name_id="405420" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="580" mapid="600200000" name="Old Temple of Records" name_id="405421" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="581" mapid="600200000" name="Hinusha Army Garrison" name_id="405422" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="582" mapid="600200000" name="Ancient Redwood Forest" name_id="405423" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="583" mapid="600200000" name="Cruel Coastline" name_id="405424" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="584" mapid="600200000" name="Temple of Endorim" name_id="405425" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="585" mapid="600200000" name="Jungle of Silence" name_id="405426" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="586" mapid="600200000" name="Old Temple of Records" name_id="405427" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="587" mapid="600200000" name="Hinusha Army Garrison" name_id="405428" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="588" mapid="600200000" name="Ancient Redwood Forest" name_id="405429" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="589" mapid="600200000" name="Cruel Coastline" name_id="405430" posX="0" posY="0" posZ="0" heading="0"/>
-    <teleloc_template loc_id="590" mapid="600200000" name="Temple of Endorim" name_id="405431" posX="0" posY="0" posZ="0" heading="0"/>
-    -->
+    <teleloc_template loc_id="579" mapid="600200000" name="Jungle of Silence" name_id="405420" posX="1242.5103" posY="652.6637" posZ="283.1" heading="42"/>
+    <teleloc_template loc_id="580" mapid="600200000" name="Old Temple of Records" name_id="405421" posX="612.9095" posY="840.0107" posZ="340.2" heading="0"/>
+    <teleloc_template loc_id="581" mapid="600200000" name="Hinusha Army Garrison" name_id="405422" posX="1169.3785" posY="2822.115" posZ="208.2" heading="0"/>
+    <teleloc_template loc_id="582" mapid="600200000" name="Ancient Redwood Forest" name_id="405423" posX="446.46176" posY="2182.684" posZ="307.9" heading="0"/>
+    <teleloc_template loc_id="583" mapid="600200000" name="Cruel Coastline" name_id="405424" posX="2611.9133" posY="1419.057" posZ="204.4" heading="105"/>
+    <teleloc_template loc_id="584" mapid="600200000" name="Temple of Endorim" name_id="405425" posX="1660.6097" posY="1378.924" posZ="253.6" heading="27"/>
+    <teleloc_template loc_id="585" mapid="600200000" name="Jungle of Silence" name_id="405426" posX="1137.9592" posY="689.2502" posZ="286.4" heading="106"/>
+    <teleloc_template loc_id="586" mapid="600200000" name="Old Temple of Records" name_id="405427" posX="910.995" posY="941.1896" posZ="339.00156" heading="0"/>
+    <teleloc_template loc_id="587" mapid="600200000" name="Hinusha Army Garrison" name_id="405428" posX="1261.4587" posY="2776.4917" posZ="204.6" heading="0"/>
+    <teleloc_template loc_id="588" mapid="600200000" name="Ancient Redwood Forest" name_id="405429" posX="696.94055" posY="2255.0447" posZ="295.1" heading="0"/>
+    <teleloc_template loc_id="589" mapid="600200000" name="Cruel Coastline" name_id="405430" posX="2681.0906" posY="1590.0444" posZ="204.3" heading="74"/>
+    <teleloc_template loc_id="590" mapid="600200000" name="Temple of Endorim" name_id="405431" posX="1600.4866" posY="1658.3662" posZ="255.1" heading="80"/>
     <teleloc_template loc_id="591" mapid="600200000" name="Lakrum" name_id="405444" posX="2691.0288" posY="488.2339" posZ="323.37674" heading="45"/>
     <teleloc_template loc_id="592" mapid="600200000" name="Lakrum" name_id="405445" posX="2926.9229" posY="2503.3433" posZ="313.80035" heading="60"/>
 </teleport_location>

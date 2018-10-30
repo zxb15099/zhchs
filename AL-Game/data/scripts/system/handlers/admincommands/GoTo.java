@@ -148,6 +148,49 @@ public class GoTo extends AdminCommand {
 			goTo(player, WorldMapType.BELUSLAN.getId(), 2431, 2063, 579);
 		}
 		/**
+		 *	Abyss
+		 */
+
+		else if (destination.equalsIgnoreCase("Soufre") || destination.equalsIgnoreCase("1141")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 826, 850, 1512);
+		}
+		else if (destination.equalsIgnoreCase("Siel occi") || destination.equalsIgnoreCase("1131")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 2130, 2028, 1498);
+		}
+		else if (destination.equalsIgnoreCase("Siel ori") || destination.equalsIgnoreCase("1132")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 1824, 2213, 1530);
+		}
+		else if (destination.equalsIgnoreCase("Core") || destination.equalsIgnoreCase("1011")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 1519, 1565, 2310);
+		}
+		else if (destination.equalsIgnoreCase("Roah") || destination.equalsIgnoreCase("1211")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 2226, 457, 2894);
+		}
+		else if (destination.equalsIgnoreCase("Asteria") || destination.equalsIgnoreCase("1251")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 467, 2485, 2921);
+		}
+		else if (destination.equalsIgnoreCase("Krotan") || destination.equalsIgnoreCase("1221")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 1446, 906, 2987);
+		}
+		else if (destination.equalsIgnoreCase("Kysis") || destination.equalsIgnoreCase("1231")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 1747, 1701, 3024);
+		}
+		else if (destination.equalsIgnoreCase("Miren") || destination.equalsIgnoreCase("1241")) {
+			goTo(player, WorldMapType.RESHANTA.getId(), 1221, 1799, 2943);
+		} // Balaurea
+		else if (destination.equalsIgnoreCase("Avidite") || destination.equalsIgnoreCase("2011")) {
+			goTo(player, WorldMapType.INGGISON.getId(), 887, 1979, 341);
+		}
+		else if (destination.equalsIgnoreCase("Dragon") || destination.equalsIgnoreCase("2021")) {
+			goTo(player, WorldMapType.INGGISON.getId(), 1729, 2236, 329);
+		}
+		else if (destination.equalsIgnoreCase("Vorgaltem") || destination.equalsIgnoreCase("3011")) {
+			goTo(player, WorldMapType.GELKMAROS.getId(), 1198, 806, 314);
+		}
+		else if (destination.equalsIgnoreCase("Pourpre") || destination.equalsIgnoreCase("3021")) {
+			goTo(player, WorldMapType.GELKMAROS.getId(), 1882, 1042, 331);
+		}
+		/**
 		 * Balaurea
 		 */
 		else if (destination.equalsIgnoreCase("?Inggison")) {
@@ -204,13 +247,16 @@ public class GoTo extends AdminCommand {
 		else if (destination.equalsIgnoreCase("enshar2") || destination.equalsIgnoreCase("Whirlpool Temple")) {
 			goTo(player, 220080000, 1578.95f, 151.19f, 186.81342f, (byte) 55);
 		}
-		else if (destination.equalsIgnoreCase("lakrum") || destination.equalsIgnoreCase("Lakrum")) {
+		else if (destination.equalsIgnoreCase("60") || destination.equalsIgnoreCase("Lakrum")) {
 			if (player.getRace() == Race.ELYOS) {
 				goTo(player, 600200000, 2688.5857f, 487.36588f, 323.3768f, (byte) 110);
 			}
 			else if (player.getRace() == Race.ASMODIANS) {
 				goTo(player, 600200000, 2925.3015f, 2505.124f, 313.80035f, (byte) 90);
 			}
+		}
+		else if (destination.equalsIgnoreCase("1521")) {
+			goTo(player, 600200000, 423, 1531, 320);
 		}
 		/**
 		 * Quest Instance Maps

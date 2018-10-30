@@ -2,9 +2,18 @@
 <!-- parsed by phpTools from Aion Germany Group (Mariella) at 2018-09-16 15:52 -->
 <siege_locations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="siege_locations.xsd">
     <!-- Reshanta -->
-    <siege_location id="1011" type="FORTRESS" world="400010000" name_id="801821" occupy_count="1" influence="8">
+    <siege_location id="1011" type="FORTRESS" world="400010000" name_id="801821" occupy_count="1" influence="8" siege_duration="3600">
         <door_repair itemid="188030000" repair_fee="5" repair_cooltime="30"/>
         <artifact_activation itemid="188020000" count="1" skill="12078" cd="7200"/>
+		<siege_reward top="12" itemid="186000096" m_count="3"/>
+        <siege_reward top="20" itemid="186000030" m_count="3"/>
+        <siege_reward top="30" itemid="186000030" m_count="2"/>
+        <siege_reward top="40" itemid="186000031" m_count="3"/>
+        <legion_reward itemid="186000096" m_count="3"/>
+        <legion_reward itemid="186000030" m_count="20"/>
+        <legion_reward itemid="186000031" m_count="60"/>
+        <legion_reward itemid="188051893" m_count="1"/>
+        <legion_reward itemid="122001519" m_count="1"/>
     </siege_location>
     <siege_location id="1014" type="ARTIFACT" world="400010000" influence="0">
         <artifact_activation itemid="188020002" count="2" skill="12191" repeat_count="5" repeat_interval="4" cd="600"/>
@@ -49,5 +58,17 @@
     <siege_location id="1519" type="ARTIFACT" world="600200000" influence="0" base_id="129">
         <artifact_activation itemid="188020002" count="2" skill="12197" repeat_count="5" repeat_interval="3" cd="180"/>
     </siege_location>
-    <siege_location id="1521" type="FORTRESS" world="600200000" name_id="810759" influence="8"/>
+    <siege_location id="1521" type="FORTRESS" world="600200000" name_id="810759" influence="8" siege_duration="3600">
+		<door_repair itemid="188030000" repair_fee="5" repair_cooltime="30"/>
+        <artifact_activation itemid="188020000" count="1" skill="12078" cd="7200"/>
+		<siege_reward top="12" itemid="186000096" m_count="3"/>
+        <siege_reward top="20" itemid="186000030" m_count="3"/>
+        <siege_reward top="30" itemid="186000030" m_count="2"/>
+        <siege_reward top="40" itemid="186000031" m_count="3"/>
+        <legion_reward itemid="186000096" m_count="3"/>
+        <legion_reward itemid="186000030" m_count="20"/>
+        <legion_reward itemid="186000031" m_count="60"/>
+        <legion_reward itemid="188051893" m_count="1"/>
+        <legion_reward itemid="122001519" m_count="1"/>
+    </siege_location>
 </siege_locations>
