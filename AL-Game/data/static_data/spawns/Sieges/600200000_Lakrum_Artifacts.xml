@@ -2006,25 +2006,6 @@
 						<spot x="1941.8743" y="1280.8743" z="200.43407" h="36"/>
 						<spot x="2001.4601" y="1659.6976" z="225.75" h="83"/>
 					</spawn>
-					<!-- Superior Fighter of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Fi -->
-					<spawn npc_id="886278" respawn_time="295">
-						<spot x="1951.9758" y="1285.5186" z="200.5" h="15"/>
-						<spot x="1943.7037" y="1289.4722" z="200.5" h="30"/>
-						<spot x="1929.9269" y="1272.8347" z="200.5" h="75"/>
-						<spot x="1925.4581" y="1269.7042" z="200.21603" h="60"/>
-					</spawn>
-					<!-- Superior Scout of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_As -->
-					<spawn npc_id="886279" respawn_time="295">
-						<spot x="1934.2817" y="1289.3774" z="200.5" h="41"/>
-					</spawn>
-					<!-- Superior Recruit of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Wi -->
-					<spawn npc_id="886280" respawn_time="295">
-						<spot x="1944.3811" y="1272.3136" z="200.5" h="96"/>
-					</spawn>
-					<!-- Superior Healer of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Pr -->
-					<spawn npc_id="886281" respawn_time="295">
-						<spot x="1941.8743" y="1280.8743" z="200.43407" h="36"/>
-					</spawn>
                 </siege_mod>
                 <siege_mod mod="SIEGE">
                 </siege_mod>
