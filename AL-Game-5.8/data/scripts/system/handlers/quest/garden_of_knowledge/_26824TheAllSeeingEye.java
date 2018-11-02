@@ -47,7 +47,7 @@ public class _26824TheAllSeeingEye extends QuestHandler {
 		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 
-		if (qs.getStatus() == QuestStatus.REWARD) {
+		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 220587) { // Liberated Earth Jotun
 				return sendQuestEndDialog(env);
 			}

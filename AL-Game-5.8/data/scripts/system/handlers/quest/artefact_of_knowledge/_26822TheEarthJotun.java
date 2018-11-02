@@ -68,7 +68,7 @@ public class _26822TheEarthJotun extends QuestHandler {
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 		DialogAction dialog = env.getDialog();
 
-		if (qs.getStatus() == QuestStatus.START) {
+		if (qs != null && qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
 			if (targetId == 220588) { // Fighting Earth Jotun
 				switch (dialog) {

@@ -3,7 +3,7 @@
 del /q /s cache
 del /q /s log
 del *.log
-del /q /s H:\AL-5.8\AL-Game\data\static_data\spawns\Npcs\New\*.*
+del /q /s \data\static_data\spawns\Npcs\New\*.*
  
 TITLE Aion German - Game Server Console
 :START

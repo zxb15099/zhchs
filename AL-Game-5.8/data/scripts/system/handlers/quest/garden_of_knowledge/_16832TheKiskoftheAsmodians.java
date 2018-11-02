@@ -47,7 +47,7 @@ public class _16832TheKiskoftheAsmodians extends QuestHandler {
 		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 
-		if (qs.getStatus() == QuestStatus.REWARD) {
+		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 806284) { // Weda
 				return sendQuestEndDialog(env);
 			}

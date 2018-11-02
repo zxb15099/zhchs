@@ -48,7 +48,7 @@ public class _26825TheStormyCliff extends QuestHandler {
 		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 
-		if (qs.getStatus() == QuestStatus.REWARD) {
+		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 806288) { // Stiget
 				return sendQuestEndDialog(env);
 			}
