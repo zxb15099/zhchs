@@ -1104,7 +1104,9 @@ public class QuestEngine implements GameEngine {
 			if (data.getInventoryItems() != null) {
 				for (InventoryItem inventoryItem : data.getInventoryItems().getInventoryItem()) {
 					ItemTemplate item = DataManager.ITEM_DATA.getItemTemplate(inventoryItem.getItemId());
-					item.setQuestUpdateItem(true);
+					if(item != null){
+						item.setQuestUpdateItem(true);
+					}
 				}
 			}
 		}

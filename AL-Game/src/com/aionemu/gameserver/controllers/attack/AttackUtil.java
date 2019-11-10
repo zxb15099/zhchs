@@ -570,10 +570,10 @@ public class AttackUtil {
 		int bonus = 0;
 
 		if (func.equals(Func.PERCENT) && effector instanceof Npc) {
-			damages = Math.round(baseAttack * skillDamage / 100f);
+			damages += Math.round(baseAttack * skillDamage / 100f);
 		}
 		else {
-			damages = skillDamage;
+			damages += skillDamage;
 		}
 
 		// add bonus damage
@@ -590,6 +590,7 @@ public class AttackUtil {
 				default:
 					break;
 			}
+			damages += bonus;
 		}
 
 		int damage = Math.round(StatFunctions.calculateMagicalSkillDamage(effect.getEffector(), effect.getEffected(), damages, bonus, element, useMagicBoost, useKnowledge, noReduce, effect.getSkillTemplate().getPvpDamage()) * damageMultiplier);
@@ -612,7 +613,7 @@ public class AttackUtil {
 			damage /= effect.getSkill().getEffectedList().size();
 		}
 
-		calculateEffectResult(effect, effected, damage, status, HitType.MAHIT, ignoreShield);
+		calculateEffectResult(effect, effected, damage*10, status, HitType.MAHIT, ignoreShield);
 	}
 
 	/**

@@ -366,7 +366,7 @@
             <siege_race race="BALAUR">
                 <siege_mod mod="PEACE">
 					<!-- Legate of the 122nd Conquest Squad ||| LDF7_1512_Boss_Dr_1 -->
-					<spawn npc_id="885675" respawn_time="295">
+					<spawn npc_id="885671" respawn_time="295">
 						<spot x="1052.5057" y="554.54" z="304.5" h="83"/>
 					</spawn>
 					<!-- 122nd Garrison - Battle Encouragement ||| LDF7_Artifact_15121_Dr -->
@@ -416,6 +416,23 @@
 					<spawn npc_id="885962" respawn_time="295">
 						<spot x="1133.5143" y="458.444" z="291.625" h="90"/>
 						<spot x="1076.1577" y="428.30023" z="297.375" h="0"/>
+					</spawn>
+					<!-- Warrior of the 122nd Occupation Troop ||| LDF7_1512_Li_Guard_Fi -->
+					<spawn npc_id="885971" respawn_time="295">
+						<spot x="1056.5366" y="530.0116" z="304.375" h="90"/>
+						<spot x="1039.073" y="535.909" z="304.5" h="75"/>
+					</spawn>
+					<!-- Scout of the 122nd Occupation Troop ||| LDF7_1512_Li_Guard_As -->
+					<spawn npc_id="885972" respawn_time="295">
+						<spot x="1055.022" y="519.212" z="304.375" h="105"/>
+					</spawn>
+					<!-- Recruit of the 122nd Occupation Troop ||| LDF7_1512_Li_Guard_Wi -->
+					<spawn npc_id="885849" respawn_time="295">
+						<spot x="1040.7745" y="524.6127" z="304.5" h="90"/>
+					</spawn>
+					<!-- Healer of the 122nd Occupation Troop ||| LDF7_1512_Li_Guard_Pr -->
+					<spawn npc_id="885973" respawn_time="295">
+						<spot x="1062.1648" y="540.8894" z="304.375" h="60"/>
 					</spawn>
                 </siege_mod>
                 <siege_mod mod="SIEGE">
@@ -692,6 +709,10 @@
 					<!-- Teleporter ||| LDF7_v03_Teleport_L -->
 					<spawn npc_id="731896" respawn_time="295">
 						<spot x="727.9611" y="800.67224" z="334.95532" h="30" static_id="1405"/>
+					</spawn>
+					<!-- Entrance to Prometun's Workshop ||| IDF7_Weapon_Entrance_In_L -->
+					<spawn npc_id="731939" respawn_time="295">
+						<spot x="740.2521" y="786.0261" z="332.5734" h="30"/>
 					</spawn>
 					<!-- /////////////////SUB-BASES ON ELYOS OCCUPYING 1513\\\\\\\\\\\\\\\\  -->
 					<!-- Fighter of the 123rd Search Party -->
@@ -1498,7 +1519,7 @@
             <siege_race race="ASMODIANS">
                 <siege_mod mod="PEACE">
 					<!-- Legate of the 127th Defence Troop ||| LDF7_1517_Boss_Da_1 -->
-					<spawn npc_id="885745" respawn_time="295">
+					<spawn npc_id="885741" respawn_time="295">
 						<spot x="2789.1172" y="1445.5415" z="199.60179" h="41"/>
 					</spawn>
 					<!-- 127th Garrison - Battle's Blessing ||| LDF7_Artifact_15171_Da -->
@@ -1699,8 +1720,8 @@
             </siege_race>
             <siege_race race="ELYOS">
                 <siege_mod mod="PEACE">
-				<!-- Legate of the 127th Conquest Squad ||| LDF7_1517_Boss_Dr_5 -->
-					<spawn npc_id="885740" respawn_time="295">
+					<!-- Legate of the 127th Conquest Squad ||| LDF7_1517_Boss_Dr_5 -->
+					<spawn npc_id="885725" respawn_time="295">
 						<spot x="2789.1172" y="1445.5415" z="199.60179" h="41"/>
 					</spawn>
 					<!-- 127th Garrison - Battle's Blessing ||| LDF7_Artifact_15171_Li -->
@@ -2005,6 +2026,25 @@
 					<spawn npc_id="886058" respawn_time="295">
 						<spot x="1941.8743" y="1280.8743" z="200.43407" h="36"/>
 						<spot x="2001.4601" y="1659.6976" z="225.75" h="83"/>
+					</spawn>
+					<!-- Superior Fighter of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Fi -->
+					<spawn npc_id="886278" respawn_time="295">
+						<spot x="1951.9758" y="1285.5186" z="200.5" h="15"/>
+						<spot x="1943.7037" y="1289.4722" z="200.5" h="30"/>
+						<spot x="1929.9269" y="1272.8347" z="200.5" h="75"/>
+						<spot x="1925.4581" y="1269.7042" z="200.21603" h="60"/>
+					</spawn>
+					<!-- Superior Scout of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_As -->
+					<spawn npc_id="886279" respawn_time="295">
+						<spot x="1934.2817" y="1289.3774" z="200.5" h="41"/>
+					</spawn>
+					<!-- Superior Recruit of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Wi -->
+					<spawn npc_id="886280" respawn_time="295">
+						<spot x="1944.3811" y="1272.3136" z="200.5" h="96"/>
+					</spawn>
+					<!-- Superior Healer of the 128th Vanguard ||| LDF7_1518_Dr_D_Recon_Pr -->
+					<spawn npc_id="886281" respawn_time="295">
+						<spot x="1941.8743" y="1280.8743" z="200.43407" h="36"/>
 					</spawn>
                 </siege_mod>
                 <siege_mod mod="SIEGE">

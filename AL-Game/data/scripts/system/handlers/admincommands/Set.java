@@ -131,6 +131,7 @@ public class Set extends AdminCommand {
 			try {
 				gp = Integer.parseInt(paramValue);
 				if (gp > 15000) {
+					PacketSendUtility.sendMessage(admin, "Params must be less than 15000!");
 					return;
 				}
 			}

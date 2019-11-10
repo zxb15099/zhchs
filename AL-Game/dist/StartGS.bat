@@ -12,7 +12,7 @@ SET JAVAVER=1.7
 SET NUMAENABLE=false
 CLS
 IF "%MODE%" == "" (
-SET JAVA_OPTS=-Xms5096m -Xmx8192m -server
+SET JAVA_OPTS=-Xms8192m -Xmx8192m -server
 )
 
 

@@ -24,6 +24,14 @@
     <!-- Lower Udas - Exit Elyos -->
     <portal_loc world_id="210050000" loc_id="3001604" x="231.83824" y="1213.3438" z="273.27087" h="15"/>
 
+    <!-- Mirash Refuge Teleports -->
+    <!-- Mirash Refuge - Entry -->
+    <portal_loc world_id="301720000" loc_id="3017200" x="770.9567" y="831.987" z="520.6439" h="90"/>
+    <!-- Mirash Refuge - Exit Elyos -->
+    <portal_loc world_id="600200000" loc_id="3017201" x="1902.9199" y="723.98267" z="218.25" h="80"/>
+    <!-- Mirash Refuge - Exit Asmodians -->
+    <portal_loc world_id="600200000" loc_id="3017202" x="1739.1641" y="2344.1355" z="254.0" h="63"/>
+
     <!-- Garden of Knowledge Teleports -->
     <!-- Garden of Knowledge - Entry -->
     <portal_loc world_id="301550000" loc_id="3015500" x="1484.535" y="780.51636" z="1035.2672" h="60"/>
@@ -42,7 +50,6 @@
     <!-- Garden of Knowledge - Exit Elyos -->
     <portal_loc world_id="600200000" loc_id="3015507" x="1460.8947" y="926.34985" z="261.125" h="119"/>
 
-
     <!-- Prometuns Workshop Teleports -->
     <!-- Prometuns Workshop - Entry -->
     <portal_loc world_id="302430000" loc_id="3024300" x="456.6875" y="805.88556" z="811.7392" h="0"/>
@@ -50,6 +57,53 @@
     <portal_loc world_id="302430000" loc_id="3024301" x="898.68146" y="776.25995" z="758.0861" h="0"/>
     <!-- Prometuns Workshop - Exit -->
     <portal_loc world_id="600200000" loc_id="3024302" x="1192.1702" y="1506.3175" z="253.7151" h="58"/>
+
+    <!-- Hererim Mine Teleports -->
+    <!-- Hererim Mine - Entry -->
+    <portal_loc world_id="302500000" loc_id="3025000" x="855.55054" y="528.08954" z="295.125" h="60"/>
+    <!-- Hererim Mine - Entrance to the Gallery of Obsession (left) -->
+    <portal_loc world_id="302500000" loc_id="3025002" x="643.9684" y="274.53107" z="295.4082" h="66"/>
+    <!-- Hererim Mine - Entrance to the Gallery of Desire (middle) -->
+    <portal_loc world_id="302500000" loc_id="3025003" x="554.9611" y="685.7737" z="293.0" h="75"/>
+    <!-- Hererim Mine - Entrance to the Gallery of Jealousy (right) -->
+    <portal_loc world_id="302500000" loc_id="3025004" x="670.45447" y="765.62274" z="293.9034" h="60"/>
+    <!-- Hererim Mine - Suspicious Secret Entrance -->
+    <portal_loc world_id="302500000" loc_id="3025005" x="217.4936" y="859.23474" z="284.26904" h="30"/>
+    <!-- Hererim Mine - Exit Asmodians -->
+    <portal_loc world_id="600200000" loc_id="3025006" x="322.67368" y="382.3213" z="369.25" h="51"/><!-- TODO -->
+    <!-- Hererim Mine - Exit Elyos -->
+    <portal_loc world_id="600200000" loc_id="3025007" x="322.67368" y="382.3213" z="369.25" h="51"/>
+
+    <!-- Senekta Teleports -->
+    <!-- Senekta - Entry -->
+    <portal_loc world_id="302510000" loc_id="3025100" x="876.41376" y="567.6291" z="151.195" h="80"/>
+    <!-- Senekta - Exit -->
+    <portal_loc world_id="600200000" loc_id="3025101" x="214.51572" y="1534.0208" z="232.32986" h="112"/>
+
+    <!-- Steel Rake Fortress Teleports -->
+    <!-- Steel Rake Fortress - Entry -->
+    <portal_loc world_id="302520000" loc_id="3025200" x="946.12317" y="890.967" z="120.74587" h="75"/>
+    <!-- Steel Rake Fortress - End of Time -->
+    <portal_loc world_id="302520000" loc_id="3025205" x="70.945305" y="164.50557" z="120.5" h="60"/>
+    <!-- Steel Rake Fortress - Exit Elyos -->
+    <portal_loc world_id="600200000" loc_id="3025206" x="2661.0" y="483.0" z="323.5158" h="90"/>
+    <!-- Steel Rake Fortress - Exit Asmodians -->
+    <portal_loc world_id="600200000" loc_id="3025207" x="2909.0" y="2486.0" z="313.93933" h="90"/>
+	
+	<!-- Cloister of Kaisinel -->
+    <portal_loc world_id="110020000" loc_id="1100200" x="2155.6" y="1566.9" z="1204.897" h="71"/>
+	<!-- Kaisinel Academy -->
+	<portal_loc world_id="110070000" loc_id="1100700" x="459" y="251" z="128"/>
+	<!-- Kaisinel Academy to Sanctum -->
+	<portal_loc world_id="110010000" loc_id="1100102" x="1366.0931" y="1539.5" z="569.0382" h="90"/>
+
+    <!-- Holy Tower Teleports -->
+    <!-- Holy Tower - Entry -->
+    <portal_loc world_id="310160000" loc_id="3101600" x="76.61565" y="204.50403" z="419.9462" h="60"/>
+
+    <!-- Narakkalli Teleports -->
+    <!-- Narakkalli - Entry -->
+    <portal_loc world_id="302340000" loc_id="3023400" x="1317.6039" y="1360.2423" z="494.76074" h="75"/>
 
     <!-- Elyos Scroll Teleports -->
     <portal_loc world_id="110010000" loc_id="1100100" x="1364.5358" y="1513.5854" z="569.1747" h="60"/><!-- 6.x -->
@@ -67,4 +121,7 @@
     <portal_loc world_id="710010000" loc_id="7100100" x="1030.3135" y="1536.6667" z="97.99279"/><!-- 6.x -->
     <portal_loc world_id="220080000" loc_id="2200800" x="429.85312" y="2235.262" z="219.94165" h="25"/><!-- 6.x -->
     <portal_loc world_id="600200000" loc_id="6002001" x="2925.3015" y="2505.124" z="313.80035" h="90"/><!-- 6.x -->
+	
+	<portal_loc world_id="600300000" loc_id="6003001" x="2903.5054" y="699.6307" z="873.1986" h="107"/><!-- 6.x Dumaha Fortress-->
+
 </portal_locs>

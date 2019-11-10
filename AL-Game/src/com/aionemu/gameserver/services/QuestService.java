@@ -255,6 +255,10 @@ public final class QuestService {
 						classRewardItem = getQuestItemsbyClass(id, template.getBardSelectableReward(), selRewIndex);
 						break;
 					}
+					case PAINTER: {
+						classRewardItem = getQuestItemsbyClass(id, template.getPainterSelectableReward(), selRewIndex);
+						break;
+					}
 					case RIDER: {
 						classRewardItem = getQuestItemsbyClass(id, template.getRiderSelectableReward(), selRewIndex);
 						break;
@@ -327,6 +331,10 @@ public final class QuestService {
 						classRewardItem = getQuestItemsbyClass(id, template.getBardSelectableReward(), selRewIndex);
 						break;
 					}
+					case PAINTER: {
+						classRewardItem = getQuestItemsbyClass(id, template.getPainterSelectableReward(), selRewIndex);
+						break;
+					}
 					case RIDER: {
 						classRewardItem = getQuestItemsbyClass(id, template.getRiderSelectableReward(), selRewIndex);
 						break;
@@ -397,7 +405,7 @@ public final class QuestService {
 			player.getCommonData().addGrowthEnergy(1060000 * rewards.getExpBoost());
 		}
 		// TODO - Creativity Points 5.x
-        if (rewards.getRewardCP() != null) {}
+		if (rewards.getRewardCP() != null) {}
 		if (rewards.getExtendInventory() != null) {
 			if (rewards.getExtendInventory() == 1) {
 				CubeExpandService.expand(player, false);
@@ -405,9 +413,6 @@ public final class QuestService {
 			else if (rewards.getExtendInventory() == 2) {
 				WarehouseService.expand(player);
 			}
-		}
-		if (rewards.getExtendStigma() != null) {
-			StigmaService.extendAdvancedStigmaSlots(player);
 		}
 		// Send for: "Aura Of Growth & Berdin's Favor"
 		PacketSendUtility.sendPacket(player, new SM_STATS_INFO(player));

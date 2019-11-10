@@ -136,7 +136,7 @@ public class MySQL5PlayerLunaShopDAO extends PlayerLunaShopDAO {
 			stmt.setInt(4, player.getObjectId());
 			stmt.addBatch();
 			stmt.executeBatch();
-			con.commit();
+			//con.commit();
 		}
 		catch (Exception e) {
 			log.error("Could not update PlayerLunaShop data for player " + player.getObjectId() + " from DB: " + e.getMessage(), e);

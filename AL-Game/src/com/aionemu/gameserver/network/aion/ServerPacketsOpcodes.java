@@ -285,7 +285,7 @@ public class ServerPacketsOpcodes {
 		addPacketOpcode(SM_FLAG_UPDATE.class, 0x153, idSet); // 5.6
 		addPacketOpcode(SM_MAC_ADDRESS.class, 0x166, idSet); // 5.6 TODO
 		addPacketOpcode(SM_CHECK_MAIL_SIZE.class, 0x95, idSet); // 5.4 TODO
-		addPacketOpcode(SM_MINIONS.class, 0x16A, idSet); // 5.6 TODO
+		addPacketOpcode(SM_MINIONS.class, 0x16C, idSet); // 6.2 EU
 		addPacketOpcode(SM_EVENT_WINDOW.class, 0x13E, idSet); // 5.8 TODO
 		addPacketOpcode(SM_EVENT_WINDOW_ITEMS.class, 0x154, idSet); // 5.8 TODO
 		// ------------------FAST TRACK PACKETS----------------------//
@@ -309,6 +309,9 @@ public class ServerPacketsOpcodes {
 		// -------------------SHUGO SWEEP/LUCKY DICE----------------------//
 		addPacketOpcode(SM_SHUGO_SWEEP.class, 0x14B, idSet); //5.8 EU
 		addPacketOpcode(SM_YOUTUBE_VIDEO.class, 0x146, idSet);
+		// ----------------------DEAVANION SKILL-------------------------//
+		addPacketOpcode(SM_DAEVANION_SKILL_ENCHANT.class, 0x179, idSet); // 6.5 TODO
+		addPacketOpcode(SM_DAEVANION_SKILL_FUSION.class, 0x17A, idSet); // 6.5 TODO
 		// --------------------UNKNOWN PACKETS-----------------------//
 		addPacketOpcode(SM_UNK_60.class, 0x60, idSet);
 		addPacketOpcode(SM_UNK_106.class, 0x106, idSet);
@@ -325,17 +328,23 @@ public class ServerPacketsOpcodes {
 		addPacketOpcode(SM_RANK_LIST.class, 0x159, idSet); // 6.x TODO
 		addPacketOpcode(SM_MY_DOCUMENTATION.class, 0x15A, idSet); // 6.x TODO
 		addPacketOpcode(SM_UNK_12B.class, 0x12B, idSet); // 5.6 TODO
-		addPacketOpcode(SM_UNK_168.class, 0x168, idSet); // 5.6 TODO
+		addPacketOpcode(SM_UNK_16A.class, 0x168, idSet); // 5.6 TODO
 		addPacketOpcode(SM_UNK_165.class, 0x165, idSet); // 6.x TODO after/before Title_Info
 		addPacketOpcode(SM_UNK_11C.class, 0x11C, idSet); // 6.x TODO after/before Emotion
 		addPacketOpcode(SM_SKILL_ANIMATION.class, 0x150, idSet); // 5.6 TODO
 		addPacketOpcode(SM_UNK_15E.class, 0x15E, idSet); // 5.4 TODO
 		addPacketOpcode(SM_SILVER_STAR.class, 0x164, idSet); // 6.x TODO Lodas Silver Star
-		addPacketOpcode(SM_NEVIWIND_CANYON.class, 0x16B, idSet); // 6.x TODO
+		addPacketOpcode(SM_NEVIWIND_CANYON.class, 0x16B, idSet); // 7.x TODO
 		addPacketOpcode(SM_TOWER_OF_CHALLENGE.class, 0xEE, idSet); // 5.6
 		addPacketOpcode(SM_GODSTONE_DESTROY.class, 0x12E, idSet); // 5.6
 		addPacketOpcode(SM_TRANSFORMATION.class, 0x170, idSet); // 6.x TODO
+		
+		addPacketOpcode(SM_CUBIC_INFO.class, 0x175, idSet); // 6.x TODO
 		addPacketOpcode(SM_CUBIC.class, 0x176, idSet); // 6.x TODO
+		
+		//addPacketOpcode(SM_ATREIAN_PASSPORT.class, 0x12D, idSet); // 6.x TODO
+		addPacketOpcode(SM_REMOVE_DYE.class, 0x1DF, idSet); // 6.x TODO
+		
 		// --------------------UNKNOWN PACKETS-----------------------//
 	}
 

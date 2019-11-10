@@ -364,33 +364,35 @@ public class FortressSiege extends Siege<FortressLocation> {
 		int i = 0;
 		List<SiegeReward> playerRewards = getSiegeLocation().getReward();
 		int rewardLevel = 0;
-		for (SiegeReward topGrade : playerRewards) {
-			AbyssSiegeLevel level = AbyssSiegeLevel.getLevelById(++rewardLevel);
-			for (int rewardedPC = 0; i < topPlayersIds.size() && rewardedPC < topGrade.getTop(); ++i) {
-				Integer playerId = topPlayersIds.get(i);
-				PlayerCommonData pcd = DAOManager.getDAO(PlayerDAO.class).loadPlayerCommonData(playerId);
-				++rewardedPC;
-				if (LoggingConfig.LOG_SIEGE) {
-					log.info("[FortressSiege] [FORTRESS:" + getSiegeLocationId() + "] [RACE: " + getSiegeLocation().getRace() + "] Player Reward to: " + playerNames.get(playerId) + "] ITEM RETURN " + topGrade.getItemId() + " ITEM COUNT " + topGrade.getCount() * SiegeConfig.SIEGE_MEDAL_RATE);
-				}
-				MailFormatter.sendAbyssRewardMail(getSiegeLocation(), pcd, level, result, System.currentTimeMillis(), topGrade.getItemId(), topGrade.getCount() * SiegeConfig.SIEGE_MEDAL_RATE, 0);
+		if(playerRewards!=null){
+			for (SiegeReward topGrade : playerRewards) {
+				AbyssSiegeLevel level = AbyssSiegeLevel.getLevelById(++rewardLevel);
+				for (int rewardedPC = 0; i < topPlayersIds.size() && rewardedPC < topGrade.getTop(); ++i) {
+					Integer playerId = topPlayersIds.get(i);
+					PlayerCommonData pcd = DAOManager.getDAO(PlayerDAO.class).loadPlayerCommonData(playerId);
+					++rewardedPC;
+					if (LoggingConfig.LOG_SIEGE) {
+						log.info("[FortressSiege] [FORTRESS:" + getSiegeLocationId() + "] [RACE: " + getSiegeLocation().getRace() + "] Player Reward to: " + playerNames.get(playerId) + "] ITEM RETURN " + topGrade.getItemId() + " ITEM COUNT " + topGrade.getCount() * SiegeConfig.SIEGE_MEDAL_RATE);
+					}
+					MailFormatter.sendAbyssRewardMail(getSiegeLocation(), pcd, level, result, System.currentTimeMillis(), topGrade.getItemId(), topGrade.getCount() * SiegeConfig.SIEGE_MEDAL_RATE, 0);
 
-				switch (level) {// gp reward for fotress occupation
-					case HERO_DECORATION:
-						AbyssPointsService.addGp(pcd.getPlayer(), 300);
-						break;
-					case MEDAL:
-						AbyssPointsService.addGp(pcd.getPlayer(), 200);
-						break;
-					case ELITE_SOLDIER:
-						AbyssPointsService.addGp(pcd.getPlayer(), 150);
-						break;
-					case VETERAN_SOLDIER:
-						AbyssPointsService.addGp(pcd.getPlayer(), 100);
-						break;
-					default:
-						AbyssPointsService.addGp(pcd.getPlayer(), 50);
-						break;
+					switch (level) {// gp reward for fotress occupation
+						case HERO_DECORATION:
+							AbyssPointsService.addGp(pcd.getPlayer(), 300);
+							break;
+						case MEDAL:
+							AbyssPointsService.addGp(pcd.getPlayer(), 200);
+							break;
+						case ELITE_SOLDIER:
+							AbyssPointsService.addGp(pcd.getPlayer(), 150);
+							break;
+						case VETERAN_SOLDIER:
+							AbyssPointsService.addGp(pcd.getPlayer(), 100);
+							break;
+						default:
+							AbyssPointsService.addGp(pcd.getPlayer(), 50);
+							break;
+					}
 				}
 			}
 		}

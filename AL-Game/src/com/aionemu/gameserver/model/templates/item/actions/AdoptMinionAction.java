@@ -1,5 +1,18 @@
-/*
- * Decompiled with CFR 0_123.
+/**
+ * This file is part of Aion-Lightning <aion-lightning.org>.
+ *
+ *  Aion-Lightning is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Aion-Lightning is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details. *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Aion-Lightning.
+ *  If not, see <http://www.gnu.org/licenses/>.
  */
 package com.aionemu.gameserver.model.templates.item.actions;
 
@@ -10,7 +23,6 @@ import com.aionemu.gameserver.model.DescriptionId;
 import com.aionemu.gameserver.model.TaskId;
 import com.aionemu.gameserver.model.gameobjects.Item;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.AionServerPacket;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ITEM_USAGE_ANIMATION;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import com.aionemu.gameserver.services.toypet.MinionService;
@@ -31,46 +43,43 @@ public class AdoptMinionAction extends AbstractItemAction {
 
 	@Override
 	public void act(final Player player, final Item parentItem, final Item targetItem) {
-		final int parentItemId = parentItem.getItemId();
-		final int parentObjectId = parentItem.getObjectId();
-		final int parentNameId = parentItem.getNameId();
-		PacketSendUtility.broadcastPacket(player, (AionServerPacket) new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parentItem.getObjectId(), parentItemId, 1500, 0, 0), true);
+		PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), 0 , parentItem.getObjectId(), parentItem.getItemId(), 1500, 0), true);
 		final ItemUseObserver observer = new ItemUseObserver() {
 
 			@Override
 			public void abort() {
 				player.getController().cancelTask(TaskId.ITEM_USE);
 				player.removeItemCoolDown(parentItem.getItemTemplate().getUseLimits().getDelayId());
-				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(parentNameId)));
-				PacketSendUtility.broadcastPacketAndReceive(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parentObjectId, parentItemId, 0, 14, 0));
+				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(parentItem.getNameId())));
+				PacketSendUtility.broadcastPacketAndReceive(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), 0 , parentItem.getObjectId(), parentItem.getItemId(), 0, 14));
 				player.getObserveController().removeObserver(this);
 			}
 		};
+		
 		player.getObserveController().attach(observer);
 		player.getController().addTask(TaskId.ITEM_USE, ThreadPoolManager.getInstance().schedule(new Runnable() {
 
 			@Override
 			public void run() {
 				player.getObserveController().removeObserver(observer);
-				PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parentObjectId, parentItemId, 0, 1, 1), true);
-				if (!player.getInventory().decreaseByObjectId(parentObjectId, 1)) {
+				if (!player.getInventory().decreaseByObjectId(parentItem.getObjectId(), 1)) {
 					return;
 				}
-				if (AdoptMinionAction.this.minionId > 980000) {
-					MinionService.getInstance().adoptMinion(player, targetItem, AdoptMinionAction.this.minionId);
+				if (minionId != 0) {
+					MinionService.getInstance().adoptMinion(player, targetItem, minionId);
 				} else {
-					MinionService.getInstance().adoptMinion(player, targetItem, AdoptMinionAction.this.grade);
+					MinionService.getInstance().adoptMinion(player, targetItem, getGrade());
 				}
-				PacketSendUtility.broadcastPacketAndReceive(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), targetItem.getObjectId(), targetItem.getItemId(), 0, 13, 0));
+				PacketSendUtility.broadcastPacketAndReceive(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), 0 , parentItem.getObjectId(), parentItem.getItemId(), 0, 1));
 			}
 		}, 1500));
 	}
 
 	public int getMinionId() {
-		return this.minionId;
+		return minionId;
 	}
 
 	public String getGrade() {
-		return this.grade;
+		return grade;
 	}
 }

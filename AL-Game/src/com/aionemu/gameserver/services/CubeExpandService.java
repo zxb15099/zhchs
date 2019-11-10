@@ -30,7 +30,7 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 public class CubeExpandService {
 
 	private static final int MIN_EXPAND = 0;
-	private static final int MAX_EXPAND = 15;
+	private static final int MAX_EXPAND = 18;
 
 	/**
 	 * Expands the cubes

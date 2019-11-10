@@ -41,7 +41,6 @@ import com.aionemu.gameserver.configs.main.PeriodicSaveConfig;
 import com.aionemu.gameserver.configs.main.RateConfig;
 import com.aionemu.gameserver.configs.main.SecurityConfig;
 import com.aionemu.gameserver.dao.PlayerDAO;
-import com.aionemu.gameserver.dao.PlayerLunaShopDAO;
 import com.aionemu.gameserver.dao.PlayerPasskeyDAO;
 import com.aionemu.gameserver.dao.PlayerPunishmentsDAO;
 import com.aionemu.gameserver.dao.WeddingDAO;
@@ -93,6 +92,7 @@ import com.aionemu.gameserver.network.aion.serverpackets.SM_LEGION_JOIN_REQUEST_
 import com.aionemu.gameserver.network.aion.serverpackets.SM_MACRO_LIST;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_MESSAGE;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_MOTION;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_PACKAGE_INFO_NOTIFY;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_PLAYER_SPAWN;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_PLAYER_STATE;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_PRICES;
@@ -108,6 +108,7 @@ import com.aionemu.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_TITLE_INFO;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_UI_SETTINGS;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_UNK_106;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_UNK_12B;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_UNK_60;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_UNK_7E;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_UNK_A5;
@@ -135,6 +136,7 @@ import com.aionemu.gameserver.services.SkillLearnService;
 import com.aionemu.gameserver.services.StigmaService;
 import com.aionemu.gameserver.services.SurveyService;
 import com.aionemu.gameserver.services.TownService;
+import com.aionemu.gameserver.services.TransformationService;
 import com.aionemu.gameserver.services.VortexService;
 import com.aionemu.gameserver.services.WarehouseService;
 import com.aionemu.gameserver.services.abyss.AbyssSkillService;
@@ -456,8 +458,6 @@ public final class PlayerEnterWorldService {
 			// SM_SKILL_ANIMATION
 			client.sendPacket(new SM_SKILL_ANIMATION(player));
 
-			DAOManager.getDAO(PlayerLunaShopDAO.class).load(player);
-
 			// SM_TITLE_INFO
 			// Seems crazy but this is correct on official server [Patch 4.9.1]
 			if (player.getLevel() == 1) {
@@ -482,7 +482,7 @@ public final class PlayerEnterWorldService {
 			client.sendPacket(new SM_UNK_FD());// TODO
 
 			// SM_PACKAGE_INFO_NOTIFY
-			// client.sendPacket(new SM_PACKAGE_INFO_NOTIFY(0));
+			client.sendPacket(new SM_PACKAGE_INFO_NOTIFY(0));
 
 			// SM_MACRO_LIST
 			sendMacroList(client, player); // offi 4.9.1
@@ -639,11 +639,10 @@ public final class PlayerEnterWorldService {
 			client.sendPacket(new SM_YOUTUBE_VIDEO());
 			
 			// SM_UNK_12B
-			// client.sendPacket(new SM_UNK_12B()); // TODO - Null Pointer after Login
+			client.sendPacket(new SM_UNK_12B());
 
 			// SM_BOOST_EVENTS (new with Aion 5.1)
 			BoostEventService.getInstance().sendPacket(player); // TODO
-//			client.sendPacket(new SM_EVENT_BUFF(player, 2)); // TODO
 			
 			// SM_UNK_60
 			client.sendPacket(new SM_UNK_60()); // TODO
@@ -653,6 +652,9 @@ public final class PlayerEnterWorldService {
 
 			// SM_SHUGO_SWEEP
 			ShugoSweepService.getInstance().onLogin(player);
+			
+			// SM_CUBIC
+			PlayerCubicService.getInstance().onLogin(player);
 
 			// SM_BROKER_SERVICE
 			BrokerService.getInstance().onPlayerLogin(player);
@@ -665,6 +667,9 @@ public final class PlayerEnterWorldService {
 
 			// SM_RECIPE_LIST
 			client.sendPacket(new SM_RECIPE_LIST(player.getRecipeList().getRecipeList()));
+
+			// SM_Transformation
+			TransformationService.getInstance().onPlayerLogin(player);
 
 			// Welcome message
 			PacketSendUtility.sendWhiteMessage(player, serverName);
@@ -852,11 +857,12 @@ public final class PlayerEnterWorldService {
 					return;
 				}
 				else {
-					if (player.getRace() == Race.ASMODIANS)
+					if (player.getRace() == Race.ASMODIANS) {
 						player.getSkillList().addSkill(player, 296, 1);
-					else if (player.getRace() == Race.ELYOS)
+					}
+					else if (player.getRace() == Race.ELYOS) {
 						player.getSkillList().addSkill(player, 295, 1);
-
+					}
 				}
 			}
 
