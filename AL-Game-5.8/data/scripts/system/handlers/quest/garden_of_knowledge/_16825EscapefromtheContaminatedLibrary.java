@@ -48,7 +48,7 @@ public class _16825EscapefromtheContaminatedLibrary extends QuestHandler {
 		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 
-		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+		if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 806283) { // Radilis
 				return sendQuestEndDialog(env);
 			}

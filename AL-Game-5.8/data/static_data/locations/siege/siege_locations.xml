@@ -23,7 +23,7 @@
     <siege_location id="46" type="INDUN" world="220030000" name_id="0"/>
     <siege_location id="46" type="INDUN" world="210030000" name_id="0"/>
     <!-- Divine Fortress -->
-    <siege_location id="1011" type="FORTRESS" world="400010000" name_id="801821" occupy_count="1" influence="8">
+    <siege_location id="1011" type="FORTRESS" world="400010000" name_id="801821" occupy_count="1" influence="8" siege_duration="3600">
         <door_repair itemid="188030000" repair_fee="5" repair_cooltime="30"/>
         <artifact_activation itemid="188020000" count="1" skill="12078" cd="7200"/>
     </siege_location>

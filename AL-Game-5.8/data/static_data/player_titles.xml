@@ -231,10 +231,22 @@
     </title>
     <title id="37" nameId="2201873" desc="Miragent Holy Templar" race="ELYOS">
         <modifiers>
-            <add name="MAXHP" value="80" bonus="true"/>
-            <rate name="SPEED" value="3" bonus="true"/>
-            <rate name="ATTACK_SPEED" value="-2" bonus="true"/>
-            <rate name="BOOST_CASTING_TIME" value="2" bonus="true"/>
+            <add name="MAXHP" value="800000" bonus="true"/>
+			<add name="MAXMP" value="999999" bonus="true"/>
+			<add name="REGEN_HP" value="50000" bonus="true"/>
+			<add name="REGEN_MP" value="100000" bonus="true"/>
+			<add name="PHYSICAL_ATTACK" value="500000" bonus="true"/>
+			<add name="PHYSICAL_CRITICAL" value="20000" bonus="true"/>
+			<add name="PHYSICAL_DEFENSE" value="20000" bonus="true"/>
+			<add name="MAGICAL_RESIST" value="20000" bonus="true"/>
+			<add name="MAGICAL_ACCURACY" value="20000" bonus="true"/>
+			<add name="MAGICAL_CRITICAL" value="20000" bonus="true"/>
+			<rate name="SPEED" value="300" bonus="true"/>
+			<rate name="ATTACK_SPEED" value="-100" bonus="true"/>
+			<rate name="FLY_SPEED" value="500" bonus="true"/>
+			<add name="FLY_TIME" value="60000" bonus="true"/>
+			<rate name="BOOST_CASTING_TIME" value="100" bonus="true"/>
+			<add name="BOOST_MAGICAL_SKILL" value="120000" bonus="true"/>
         </modifiers>
     </title>
     <title id="38" nameId="2201875" desc="Aetheric Master" race="ELYOS">
@@ -551,10 +563,22 @@
     </title>
     <title id="87" nameId="2202273" desc="Fenris's Fang" race="ASMODIANS">
         <modifiers>
-            <add name="MAXHP" value="80" bonus="true"/>
-            <rate name="SPEED" value="3" bonus="true"/>
-            <rate name="ATTACK_SPEED" value="-2" bonus="true"/>
-            <rate name="BOOST_CASTING_TIME" value="2" bonus="true"/>
+            <add name="MAXHP" value="800000" bonus="true"/>
+			<add name="MAXMP" value="999999" bonus="true"/>
+			<add name="REGEN_HP" value="50000" bonus="true"/>
+			<add name="REGEN_MP" value="100000" bonus="true"/>
+			<add name="PHYSICAL_ATTACK" value="500000" bonus="true"/>
+			<add name="PHYSICAL_CRITICAL" value="20000" bonus="true"/>
+			<add name="PHYSICAL_DEFENSE" value="20000" bonus="true"/>
+			<add name="MAGICAL_RESIST" value="20000" bonus="true"/>
+			<add name="MAGICAL_ACCURACY" value="20000" bonus="true"/>
+			<add name="MAGICAL_CRITICAL" value="20000" bonus="true"/>
+			<rate name="SPEED" value="300" bonus="true"/>
+			<rate name="ATTACK_SPEED" value="-100" bonus="true"/>
+			<rate name="FLY_SPEED" value="500" bonus="true"/>
+			<add name="FLY_TIME" value="60000" bonus="true"/>
+			<rate name="BOOST_CASTING_TIME" value="100" bonus="true"/>
+			<add name="BOOST_MAGICAL_SKILL" value="120000" bonus="true"/>
         </modifiers>
     </title>
     <title id="88" nameId="2202275" desc="Aetheric Master" race="ASMODIANS">
