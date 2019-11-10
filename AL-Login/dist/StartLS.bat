@@ -1,6 +1,10 @@
 @ECHO off
 TITLE Aion German - Login Server Console
 :START
+
+SET MODE=DEVELOPMENT
+SET JAVA_OPTS=-Xms32m -Xmx32m -Xdebug -Xrunjdwp:transport=dt_socket,address=8999,server=y,suspend=n -ea
+
 CLS
 IF "%MODE%" == "" (
 CALL PanelLS.bat
