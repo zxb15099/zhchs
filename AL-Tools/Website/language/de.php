@@ -19,6 +19,7 @@ $lang = array(
         "ru" => "Russian",
         "fr" => "French",
         "it" => "Italian",
+        "sp" => "Espanol",
 
         // für die Seitentexte (Header/Menue und Sidebar)  
         "login" => "Login",
@@ -115,7 +116,8 @@ $lang = array(
         "bard" => "Barde",
         "engineer" => "Ingenieur",
         "gunner" => "Sch&uuml;tze",
-        "rider" => "&Auml;thertech",        
+        "rider" => "&Auml;thertech",
+		"painter" => "Painter",
         
         // Abyss-Ränge
         "soldier" => "Soldat, Rang",
